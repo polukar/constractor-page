@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>Главная :: Frontend pack</title>
+    <!--
+    link(rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png")
+    link(rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png")
+    link(rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png")
+    link(rel="manifest" href="assets/site.webmanifest")
+    link(rel="mask-icon" href="assets/safari-pinned-tab.svg" color="#ffffff")
+    link(rel="shortcut icon" href="assets/favicon.ico")
+    meta(name="msapplication-TileColor" content="#ffffff")
+    meta(name="msapplication-config" content="assets/browserconfig.xml")
+    meta(name="theme-color" content="#ffffff")
+    
+    -->
+    <meta name="description" content="Description">
+    <meta property="og:url" content="https://">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="title">
+    <meta property="twitter:title" content="title">
+    <meta property="og:description" content="description">
+    <meta property="twitter:description" content="description">
+    <meta property="og:image" content="assets/share.png">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  </head>
+  <body class="body dev">
+    <div class="share-popup">
+      <div class="share__close"><img src="./assets/img/close.svg" alt=""></div>
+      <h3 class="share__title">Share the Article</h3>
+      <div class="share__socials">
+        <p class="text">Share to social networks</p>
+        <div class="socials --flex --jccn"><a class="socials__link" href="#"> <img src="./assets/img/icons/fb.svg" alt=""></a><a class="socials__link" href="#"> <img src="./assets/img/icons/in.svg" alt=""></a><a class="socials__link" href="#"> <img src="./assets/img/icons/tw.svg" alt=""></a></div>
+      </div>
+      <div class="share__copy"> 
+        <p class="text">Or simply copy the link to share</p>
+        <div class="--flex --jcsb">
+          <input class="share__input" type="text" value="https://jmj.qa/news/article/12313/123123">
+          <button class="share__button --flex --jccn --aicn"> <span>Copy Link</span>
+            <div class="share__check"></div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+          <div class="header__background header-white"></div>
+          <div class="header__start header-white"><a class="header__logo" href="index.html">
+              <svg width="146" height="123" viewBox="0 0 146 123" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M44.8107 22.0992L47.493 26.2332C28.4424 32.6028 15.6646 44.8698 13.7549 46.7031L13.7548 46.7032L13.7547 46.7034C13.5926 46.859 13.5089 46.9394 13.5064 46.9344C-5.90103 64.7956 2.20906 84.7079 2.20906 84.7079C4.22549 89.3652 6.99873 93.4688 10.2541 97.0796C8.09883 99.3205 6.33666 100.738 5.45941 101.401C5.08073 101.685 4.9545 102.159 5.11229 102.601L8.6782 112.225C9.46669 107.48 11.4475 103.302 13.3245 100.215C32.0516 117.866 62.0723 122.103 62.0723 122.103C80.8801 124.122 69.9299 122.103 69.9299 122.103C39.8978 116.527 23.745 106.594 15.058 97.5949C16.3992 95.7288 17.4075 94.6679 17.4194 94.6798C38.1838 66.5627 66.648 32.8917 66.648 32.8917L60.1157 104.399C64.3128 101.023 70.4979 99.6974 70.4979 99.6974C98.6466 63.0284 129.951 33.2072 129.951 33.2072L117.044 82.278C112.153 98.0564 114.709 100.518 114.709 100.518C118.811 106.798 133.643 97.3306 133.643 97.3306C123.04 100.928 124.933 93.1335 124.933 93.1335L134.968 37.3727C137.146 26.3278 145.003 24.5922 145.003 24.5922C132.444 24.5291 123.576 35.0375 123.576 35.0375C107.325 52.6146 69.6459 94.3011 69.6459 94.3011L72.5491 37.3412C72.9278 27.9688 78.04 24.5607 78.04 24.5607C69.6459 25.1602 64.6284 31.156 64.6284 31.156L13.5379 93.3229C13.169 93.7865 12.8038 94.2302 12.444 94.6542C5.12238 85.674 4.9545 78.3019 4.9545 78.3019C4.16558 55.2654 38.0576 39.9604 38.0576 39.9604C63.1768 29.5782 72.2336 23.3615 72.2336 23.3615C77.188 20.7423 77.8507 17.8075 77.8507 17.8075L82.742 5.34259C84.6669 -1.18967 77.1564 0.104162 77.1564 0.104162L57.9699 2.94427C52.9208 3.67008 51.4376 6.3524 51.4376 6.3524L44.8107 16.2928C42.6333 19.5747 44.8107 22.0992 44.8107 22.0992ZM75.5155 8.97162C75.5155 8.97162 79.9334 8.78228 74.8212 13.3896C74.8212 13.3896 65.1333 20.5845 50.5225 25.0025L52.1634 19.8271C52.1634 19.8271 53.0155 18.3755 51.343 16.8924C51.343 16.8924 49.3233 14.5256 52.3843 12.8215C52.3843 12.8215 59.4215 9.19251 75.5155 8.97162ZM45.4734 76.1876L40.235 71.3594C39.3829 70.602 40.1088 70.0655 40.1403 70.0971L44.8738 64.5747C45.505 63.628 46.1045 64.3853 46.1045 64.3853L51.059 69.0242C52.0688 69.8446 51.2167 70.4442 51.2167 70.4442L46.2623 76.156C46.0414 76.3769 45.6943 76.4085 45.4734 76.1876Z"></path>
+              </svg></a></div>
+          <div class="header__end --flex --jcfe header-white">
+            <nav class="nav --flex --jcsb"><a class="nav__link" href="about.html">About</a><a class="nav__link" href="companies.html">Services</a><a class="nav__link" href="contacts-1.html">Contact Us</a></nav>
+            <button class="burger"></button>
+          </div>
+          <nav class="menu">
+            <div class="menu__wrap --flex --jcsb">
+              <div class="menu__left"><img src="" alt=""></div>
+              <div class="menu__right --flex --jccn">
+                <div class="menu__links">
+                  <div class="menu__link"> <a href="index.html">Home </a></div>
+                  <div class="menu__link"> <a href="about.html">Our Story</a></div>
+                  <div class="menu__link"> <a href="properties.html">Properties </a></div>
+                  <div class="menu__link"> <a href="leadership.html">Leadership</a></div>
+                  <div class="menu__link"> <a href="companies.html">Companies & Services</a></div>
+                  <div class="menu__link"> <a href="news.html">News & Publications</a></div>
+                  <div class="menu__link"> <a href="career.html">Career</a></div>
+                  <div class="menu__link menu__link--contacts"><a href="contacts-1.html">Contact Us</a></div>
+                  <div class="socials --flex --jcfe"> <a class="socials__link" href="#"><img src="./assets/img/icons/ln.svg" alt=""></a><a class="socials__link" href="#"> <img src="./assets/img/icons/fb.svg" alt=""></a><a class="socials__link" href="#"> <img src="./assets/img/icons/in.svg" alt=""></a><a class="socials__link" href="#"> <img src="./assets/img/icons/tw.svg" alt=""></a></div>
+                </div>
+              </div>
+            </div>
+          </nav>
+      <section class="main">
+        <div class="main__center">
+          <div class="container"> 
+            <div class="main__wrap">
+              <div class="main__play" style="display: none;"> 
+                    <svg class="svgsprite _play">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#play"></use>
+                    </svg>
+              </div>
+              <div class="main__number parallax p-0-2">01</div>
+              <div class="main__text">
+                <h1 class="main__title parallax p-0-1">Achieving the <br>impossible</h1>
+                <div class="main__description parallax p-0-2">Our vision</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main__socials"><a class="main__social" href="#">Instagram </a><a class="main__social" href="#">Facebook</a></div>
+        <div class="main__anchor"></div>
+        <div class="main__video">
+          <video src="./assets/img/video.mp4" autoplay muted> </video>
+        </div>
+        <div class="main__next parallax p-0-2">
+          <div class="main__next-start">
+            <div class="main__next-number">02</div>
+            <div class="main__next-title">Who we are</div>
+            <div class="main__next-description">Meet our team</div>
+          </div>
+          <div class="main__next-arrow">
+                <svg class="svgsprite _arrow-right">
+                  <use xlink:href="assets/img/sprites/svgsprites.svg#arrow-right"></use>
+                </svg>
+          </div>
+        </div><a class="main__down" href="#about">
+          <div class="container"><img src="./assets/img/arrow-down.svg" alt=""></div></a>
+      </section>
+      <section class="about" id="about">
+        <div class="after"></div>
+        <div class="container --flex --jcfe">
+          <div class="about__info parallax p-2"> 
+            <h2 class="about__title">We promote  <br>Businesses</h2>
+            <h3 class="undertitle about__undertitle">Indulge in our premier class <br>Business Support Services</h3>
+            <p class="text">Goal is to provide the best in class service to all of our clients and customers and ensure their needs are met in a timely and efficient manner. JMJ Group is committed to developing close relationships with all our business partners and we will be with you every step of the way, whatever your project or business venture.</p>
+          </div>
+          <div class="about__circle about__circle--1 parallax p-3 --parrlax-mobile"></div>
+          <div class="about__circle about__circle--2 parallax p-3 --parrlax-mobile"></div>
+          <div class="about__square parallax parallax p-3 --parrlax-mobile"></div>
+          <div class="about__line about__line-1"></div>
+          <div class="about__line about__line-2"></div>
+          <div class="about__line about__line-3"></div>
+          <div class="about__grey-title grey-title parallax p-5 --parrlax-mobile"><span>client centered</span></div>
+          <div class="about__logo"><img class="parallax p-1" src="./assets/img/indulge.svg" alt=""></div>
+        </div>
+      </section>
+      <section class="focus"> 
+        <div class="container"> 
+          <h3 class="focus__title">Industry Sectors</h3>
+          <div class="title__description">Occupational sector</div>
+          <p class="medium-text">With a diverse portfolio that includes but is not limited to: Real Estate, Manufacturing, Construction, Manpower, Event Management and Industrial Solutions, we are able to call upon a vast network of Industry Leaders and connections within the various Ministries to enable us to support your business. These relationships give us an enviable advantage in a very competitive market.</p>
+          <div class="focus__list --flex --jcsb"> 
+            <div class="focus__item">
+              <div class="focus__item-pic"><img src="./assets/img/focus-i1.svg" alt=""></div>
+              <h4 class="focus__item-title">Real Estate & <br>Hospitality</h4>
+              <p class="text focus__item-text">Offices, retail stores, hotels, and the like are allowing the local culture to influence the space throughout our companies.</p>
+            </div>
+            <div class="focus__item">
+              <div class="focus__item-pic"><img src="./assets/img/focus-i2.svg" alt=""></div>
+              <h4 class="focus__item-title">Design, IT & <br>Consultancy</h4>
+              <p class="text focus__item-text">A new breed of leaders can help companies unleash the business value of design and IT solutions.</p>
+            </div>
+            <div class="focus__item">
+              <div class="focus__item-pic"><img src="./assets/img/focus-i3.svg" alt=""></div>
+              <h4 class="focus__item-title">Manpower & <br>Development</h4>
+              <p class="text focus__item-text">Our companies provide dynamic and evolving methods widely used to improve the feasibility of each project.</p>
+            </div>
+          </div><a class="link-arrow" href="#"> 
+                <div class="link-arrow__text">View Companies &amp; Services</div>
+                <div class="link-arrow__ico"> <img src="./assets/img/arrow-right-dark.svg" alt=""></div></a>
+          <div class="focus__line"></div>
+          <div class="focus__grey-title grey-title parallax p-1 --parrlax-mobile"><span>focus</span></div>
+        </div>
+      </section>
+      <section class="properties">
+        <div class="after parallax p-4"></div>
+        <div class="container --flex --jcsb">
+          <div class="properties__pics">
+            <div class="properties__pic-big parallax p-3"><img src="./assets/img/properties-1-1.png" alt=""></div>
+            <div class="properties__pic-small parallax p-1"><img src="./assets/img/properties-2-1.jpg" alt=""></div>
+          </div>
+          <div class="properties__info parallax p-2">
+            <h2>Al Mansour <br>Suites</h2>
+            <div class="title__description">JMJ Properties</div>
+            <p class="medium-text">We’ve opened our doors to an experience guests and locals call “fresh, welcoming, contemporary and surprisingly unexpected”. </p>
+            <div class="properties__stats stats --flex --jcsb">
+              <div class="stats__item"> 
+                <div class="stats__title">Plot</div>
+                <div class="stats__info">23,5k m2</div>
+              </div>
+              <div class="stats__item"> 
+                <div class="stats__title">Year</div>
+                <div class="stats__info">2019</div>
+              </div>
+              <div class="stats__item"> 
+                <div class="stats__title">Location</div>
+                <div class="stats__info">Doha, Qatar</div>
+              </div>
+            </div><a class="link-arrow" href="#"> 
+                  <div class="link-arrow__text">All Properties</div>
+                  <div class="link-arrow__ico"> <img src="./assets/img/arrow-right-dark.svg" alt=""></div></a>
+          </div>
+          <div class="properties__line"></div>
+          <div class="properties__line-2"></div>
+          <div class="properties__grey-title grey-title parallax p-5 --parrlax-mobile"><span>01</span></div>
+        </div>
+        <div class="properties__grey-title-2 grey-title parallax p-5 --parrlax-mobile"><span>properties</span></div>
+      </section>
+      <section class="heritage">
+        <div class="after"></div>
+        <div class="container"> 
+          <h2 class="heritage__title parallax p-3">Heritage & History</h2>
+          <h2 class="heritage__number parallax p-3">2007</h2>
+          <div class="heritage__info parallax p-2">
+            <h4 class="heritage__smalltitle">Founded by Sheikh Jabor Bin Mansour Bin Jabor Bin Jassim Al Thani.</h4>
+            <div class="heritage__text-block">
+              <p class="text heritage__text">Founded in 2017 by Sheikh Jabor Bin Mansour Bin Jabor Al Thani, JMJ Group has grown quickly and sustainably. Representing over 40 diverse companies, the group promotes and ensures, ethical and compliant business operations in the State of Qatar. </p>
+              <p class="text heritage__text">The family of Sheikh Jabor has a rich heritage of investing in business ventures that contribute to the Qatar economy. Now based in the Iconic Marina Twin Towers in Lusail City, the Group looks to expand into an increasingly varied portfolio of business opportunities.</p>
+            </div><a class="link-arrow" href="#"> 
+                  <div class="link-arrow__text">Our Story of Success</div>
+                  <div class="link-arrow__ico"> <img src="./assets/img/arrow-right-dark.svg" alt=""></div></a>
+          </div>
+          <div class="heritage__grey-title grey-title parallax p-5 --parrlax-mobile"><span>success</span></div>
+          <div class="heritage__line"></div>
+        </div>
+        <div class="heritage__circle parallax p-4"><img src="./assets/img/heritage-circle.svg" alt=""></div>
+      </section>
+      <section class="leadership">
+        <div class="container --flex --jcsb"> 
+          <div class="leadership__photo"> <img src="./assets/img/leader.png" alt=""></div>
+          <div class="leadership__info">
+            <h3 class="leadership__title">Leadership</h3>
+            <div class="title__description leadership__description">Stack-holders</div>
+            <p class="medium-text">Led by the Chairman, Sheikh Jabor, the Group has appointed a number of senior executives who, collectively, have over 60 years’ experience in their fields of expertise </p>
+            <h4>Meet the Executive team</h4>
+            <div class="ladership__leaders">
+              <div class="ladership__leaders-item">
+                <p>Sheikh Jabor Al Thani	</p>
+                <p>Chairman and Founder</p>
+              </div>
+              <div class="ladership__leaders-item">
+                <p>Kifah Balaawi</p>
+                <p>Chief Operating Officer</p>
+              </div>
+              <div class="ladership__leaders-item">
+                <p>Sameer Parkar	</p>
+                <p>Chief Financial Officer</p>
+              </div>
+              <div class="ladership__leaders-item">
+                <p>Issam Al Armouti	</p>
+                <p>Economic and Financial Advisor</p>
+              </div>
+              <div class="ladership__leaders-item">
+                <p>Andy Ryan	</p>
+                <p>Head of Business Development</p>
+              </div>
+              <div class="ladership__leaders-item">
+                <p>Ghada Chaccour	</p>
+                <p>Head of Marketing</p>
+              </div>
+              <div class="ladership__leaders-item">
+                <p>Arlene Ramos	</p>
+                <p>PA to the Chairman</p>
+              </div>
+            </div><a class="link-arrow" href="#"> 
+                  <div class="link-arrow__text">Meet Stakeholders</div>
+                  <div class="link-arrow__ico"> <img src="./assets/img/arrow-right-dark.svg" alt=""></div></a>
+          </div>
+          <div class="leadership__circle-1 parallax p-4 --parrlax-mobile"></div>
+          <div class="leadership__circle-2 parallax p-4 --parrlax-mobile"></div>
+        </div>
+      </section>
+      <section class="mailblock"> 
+        <div class="container"> 
+          <div class="darkblock"> 
+            <h2 class="darkblock__title">Want to become a partner?</h2><a class="mailblock__link" href="#">
+               Contact Us<img src="./assets/img/icons/mail.svg" alt=""></a>
+          </div>
+          <div class="mailblock__circle-1 parallax p-5 --parrlax-mobile"></div>
+          <div class="mailblock__circle-2 parallax p-5"></div>
+          <div class="mailblock__circle-3 parallax p-5 --parrlax-mobile"></div>
+          <div class="mailblock__line"></div>
+        </div>
+      </section>
+      <section class="news">
+        <div class="container"> 
+          <h3 class="news__title">News & <br>Publications</h3>
+          <div class="title__description news__description">Our honorable speakers in news papers</div>
+          <div class="news__wrap">
+            <div class="news__list --flex --jcsb">
+              <div class="news__square parallax p-2"></div>
+              <div class="news__item parallax p-4"> 
+                <div class="news__pic"> <img src="./assets/img/news-1.png" alt=""></div>
+                <h4 class="news__name">JMJ Group of Companies</h4>
+                <div class="news__stats stats --flex --jcsb">
+                  <div class="stats__item"> 
+                    <div class="stats__info">7 min read</div>
+                  </div>
+                  <div class="stats__item"> 
+                    <div class="stats__info">Jan 29, 2021</div>
+                  </div>
+                </div>
+                <p class="text news__text">Companies selling Furniture do not expect their users to buy Furniture again in the near future and therefore their focus will…</p><a class="link-arrow" href="#"> 
+                      <div class="link-arrow__text">Read Full Article</div>
+                      <div class="link-arrow__ico"> <img src="./assets/img/arrow-right-dark.svg" alt=""></div></a>
+              </div>
+              <div class="news__item parallax p-4"> 
+                <div class="news__pic"> <img src="./assets/img/news-2.png" alt=""></div>
+                <h4 class="news__name">FIFA to trial <br>concussion subset…</h4>
+                <div class="news__stats stats --flex --jcsb">
+                  <div class="stats__item"> 
+                    <div class="stats__info">7 min read</div>
+                  </div>
+                  <div class="stats__item"> 
+                    <div class="stats__info">Jan 29, 2021</div>
+                  </div>
+                </div>
+                <p class="text news__text">Companies selling Furniture do not expect their users to buy Furniture again in the near future and therefore their focus will…</p><a class="link-arrow" href="#"> 
+                      <div class="link-arrow__text">Read Full Article</div>
+                      <div class="link-arrow__ico"> <img src="./assets/img/arrow-right-dark.svg" alt=""></div></a>
+              </div>
+              <div class="news__item parallax p-4"> 
+                <div class="news__pic"> <img src="./assets/img/news-3.png" alt=""></div>
+                <h4 class="news__name">Honorable <br>Mentions</h4>
+                <div class="news__stats stats --flex --jcsb">
+                  <div class="stats__item"> 
+                    <div class="stats__info">7 min read</div>
+                  </div>
+                  <div class="stats__item"> 
+                    <div class="stats__info">Jan 29, 2021</div>
+                  </div>
+                </div>
+                <p class="text news__text">Companies selling Furniture do not expect their users to buy Furniture again in the near future and therefore their focus will…</p><a class="link-arrow" href="#"> 
+                      <div class="link-arrow__text">Read Full Article</div>
+                      <div class="link-arrow__ico"> <img src="./assets/img/arrow-right-dark.svg" alt=""></div></a>
+              </div>
+            </div>
+          </div>
+          <div class="news__grey-title grey-title parallax p-5 --parrlax-mobile"><span>news</span></div>
+          <div class="news__line"></div>
+        </div>
+      </section>
+      <section class="companies">
+        <div class="container"> 
+          <h3 class="companies__title">Our Companies</h3>
+          <div class="companies__list-wrap">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="companies__item swiper-slide"><img src="./assets/img/companies/company-1.png" alt=""></div>
+                <div class="companies__item swiper-slide"><img src="./assets/img/companies/company-2.png" alt=""></div>
+                <div class="companies__item swiper-slide"><img src="./assets/img/companies/company-3.png" alt=""></div>
+                <div class="companies__item swiper-slide"><img src="./assets/img/companies/company-4.png" alt=""></div>
+                <div class="companies__item swiper-slide"><img src="./assets/img/companies/company-5.png" alt=""></div>
+                <div class="companies__item swiper-slide"><img src="./assets/img/companies/company-1.png" alt=""></div>
+                <div class="companies__item swiper-slide"><img src="./assets/img/companies/company-2.png" alt=""></div>
+                <div class="companies__item swiper-slide"><img src="./assets/img/companies/company-3.png" alt=""></div>
+                <div class="companies__item swiper-slide"><img src="./assets/img/companies/company-4.png" alt=""></div>
+                <div class="companies__item swiper-slide"><img src="./assets/img/companies/company-5.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+          <div class="companies__link --flex --jcfe"><a class="link-arrow" href="#"> 
+                  <div class="link-arrow__text">View All Companies</div>
+                  <div class="link-arrow__ico"> <img src="./assets/img/arrow-right-dark.svg" alt=""></div></a>
+          </div>
+          <div class="companies__line"></div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container --flex --jcsb">
+          <div class="footer__left"> 
+            <div class="footer__list --flex --jcsb"> 
+              <div class="footer__item"> 
+                <div class="footer__title">JMJ Group</div><a class="footer__link" href="">About</a><a class="footer__link" href="">Leadership</a><a class="footer__link" href="">Companies & Services</a><a class="footer__link" href="">Properties</a>
+              </div>
+              <div class="footer__item"> 
+                <div class="footer__title">Stay Tuned</div><a class="footer__link" href="">Career</a><a class="footer__link" href="">News & Publications</a>
+              </div>
+              <div class="footer__item"> 
+                <div class="footer__title">Legal</div><a class="footer__link" href="">Terms & Conditions</a><a class="footer__link" href="">Privacy Policy</a>
+              </div>
+              <div class="footer__item"> 
+                <div class="footer__title">Contact Details</div><a class="footer__link" href="">Contact Us</a>
+                <div class="footer__contacts"> 
+                  <p class="footer__contact">Marina Twin Towers 303, Lusail, Qatar</p>
+                  <p class="footer__contact">+974 3000 0044</p>
+                  <p class="footer__contact"><a href="mailto:info@jmj.qa">info@jmj.qa</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__right"> 
+            <div class="footer__item">
+              <div class="footer__title">Follow Us</div>
+              <div class="socials --flex --jcfe"> <a class="socials__link" href="#"><img src="./assets/img/icons/ln.svg" alt=""></a><a class="socials__link" href="#"> <img src="./assets/img/icons/fb.svg" alt=""></a><a class="socials__link" href="#"> <img src="./assets/img/icons/in.svg" alt=""></a><a class="socials__link" href="#"> <img src="./assets/img/icons/tw.svg" alt=""></a></div>
+              <div class="copyright">
+                <p> <b>© JMJ Group, 2021</b></p>
+                <p>
+                   Developed by <a href="#"><b>CICS WEB</b></a></p>
+                <p>All rights reserved</p>
+              </div>
+            </div>
+          </div>
+          <div class="copyright --mobile">
+            <p> <b>© JMJ Group, 2021</b></p>
+            <p>
+               Developed by <a href="#"><b>CICS WEB</b></a></p>
+            <p>All rights reserved</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="hidden">
+      <!-- include popups here-->
+    </div>
+    <link rel="stylesheet" href="assets/css/common.css?v=1.2.3">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="assets/js/vendors~main.bundle.js"></script>
+    <script src="assets/js/main.bundle.js?v=1.2.3"></script>
+  </body>
+</html>
